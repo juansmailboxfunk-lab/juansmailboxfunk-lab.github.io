@@ -1,0 +1,43 @@
+:root{
+  --brand:#2D6CDF;
+  --ink:#111;
+  --muted:#6b7280;
+  --surface:#f7f9fc;
+  --maxw: 980px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); line-height:1.6;}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 20px;}
+.skip{position:absolute; left:-9999px;}
+.skip:focus{left:12px; top:12px; background:#000; color:#fff; padding:8px 10px; border-radius:8px; z-index:999;}
+nav{position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid #eee;}
+nav .container{display:flex; gap:16px; justify-content:center; padding:10px;}
+nav a{color:var(--ink); text-decoration:none; font-weight:600;}
+nav a:focus{outline:2px solid var(--brand); outline-offset:3px;}
+header{background:var(--brand); color:#fff;}
+.hero{display:flex; flex-direction:column; align-items:center; text-align:center; padding:96px 0;}
+h1{line-height:1.15; font-weight:800; font-size:clamp(32px,6vw,48px); margin:0 0 10px;}
+.lead{font-size:clamp(16px,2.8vw,20px); opacity:.95;}
+.btn{background:var(--brand); color:#fff; border:none; padding:12px 22px; border-radius:999px; cursor:pointer; transition:transform .05s ease, opacity .2s ease; margin-top:14px;}
+.btn:hover{opacity:.9;}
+.btn:active{transform:translateY(1px);}
+section{padding:64px 0;}
+#services{background:var(--surface);}
+h2{margin:0 0 8px; font-size:28px;}
+.muted{color:var(--muted);}
+.services{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:20px;}
+.service{flex:1 1 260px; max-width:320px; background:#fff; border:1px solid #e5e7eb; padding:24px; border-radius:12px; box-shadow:0 1px 0 #eef2f7; transition:transform .15s ease, box-shadow .2s ease;}
+.service:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.06);}
+.service h3{margin-top:0}
+.contact-form{max-width:520px; margin:16px auto 0; display:grid; gap:12px;}
+.contact-form label{display:grid; gap:6px; text-align:left;}
+input,textarea{width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; font:inherit;}
+input:focus,textarea:focus{outline:2px solid var(--brand); outline-offset:1px;}
+footer{background:#f4f6f8;}
+footer .container{padding:20px; text-align:center;}
+footer a{color:inherit}
+@media (max-width:600px){
+  .hero{padding:72px 0;}
+  .service{padding:16px;}
+}

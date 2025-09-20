@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Web Developer</title>
+  <meta name="description" content="I build simple, fast websites for small businesses.">
+  <link rel="icon" href="data:,">
+  <meta property="og:title" content="Your Name — Web Developer">
+  <meta property="og:description" content="Simple, fast websites for small businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/">
+  <meta property="og:image" content="https://YOURUSERNAME.github.io/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script defer data-domain="YOURUSERNAME.github.io" src="https://plausible.io/js/script.js"></script> -->
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <nav aria-label="Primary">
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header id="home">
+    <div class="container hero">
+      <h1>Hi, I'm Your Name</h1>
+      <p class="lead">I build simple, fast websites for small businesses.</p>
+      <button id="cta-btn" class="btn">Work With Me</button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="services">
+      <div class="container">
+        <h2>What I Do</h2>
+        <div class="services">
+          <article class="service">
+            <h3>Landing Pages</h3>
+            <p>High‑converting one‑page sites built quickly.</p>
+          </article>
+          <article class="service">
+            <h3>Small Business Sites</h3>
+            <p>Mobile‑friendly, easy to update, clear messaging.</p>
+          </article>
+          <article class="service">
+            <h3>Custom Fixes</h3>
+            <p>Speed, mobile & design tweaks to improve existing sites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="muted">Use the form and I’ll reply within 24 hours.</p>
+        <form action="https://formspree.io/f/PUT-YOUR-FORMSPREE-ID-HERE" method="POST" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" placeholder="Tell me about your project" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name • <a href="impressum.html">Impressum</a> • <a href="privacy.html">Datenschutzerklärung</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
